@@ -17,8 +17,6 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
         
 </head>

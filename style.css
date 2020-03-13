@@ -882,6 +882,21 @@ body {
   background: #FFF;
 }
 
+/* Social Menu Icons */
+
+.site-social-menu {
+  margin-top: 3rem;
+}
+
+.ashiishme-social-list {
+  list-style: none;
+}
+
+.ashiishme-social-list li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
 @media only screen and (max-width: 768px) {
 
   .site-content {

@@ -44,12 +44,21 @@
 		
 		<!-- social menu starts -->
 		<div class="site-social-menu">
-			<ul class="ashiishme-social-list">
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'social',
+						'menu_class' 	 => 'ashiishme-social-list',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					)
+				);
+			?>
+			<!-- <ul class="ashiishme-social-list">
 				<li class="social-item ashiishme-facebook"><i class="fab fa-facebook-square"></i></li>
 				<li class="social-item ashiishme-twitter"><i class="fab fa-twitter-square"></i></li>
 				<li class="social-item ashiishme-linkedin"><i class="fab fa-linkedin"></i></li>
 				<li class="social-item ashiishme-github"><i class="fab fa-github-square"></i></li>
-			</ul>
+			</ul> -->
 		</div>
 		<!-- social menu ends -->
 	</div>

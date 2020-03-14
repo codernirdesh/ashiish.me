@@ -43,6 +43,7 @@
 		<?php endif; ?>
 		
 		<!-- social menu starts -->
+		<?php if(has_nav_menu( 'social' ) ) : ?>
 		<div class="site-social-menu">
 			<?php
 				wp_nav_menu(
@@ -60,5 +61,6 @@
 				<li class="social-item ashiishme-github"><i class="fab fa-github-square"></i></li>
 			</ul> -->
 		</div>
+		<?php endif; ?>
 		<!-- social menu ends -->
 	</div>

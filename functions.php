@@ -123,11 +123,11 @@ endif;
 add_action( 'after_setup_theme', 'ashiishme_setup' );
 
 // Security
-	function ashiish_wp_rm_v() {
-		return '';
-	}
+function ashiish_wp_rm_v() {
+	return '';
+}
 
-	add_filter('the_generator', 'ashiish_wp_rm_v');
+add_filter('the_generator', 'ashiish_wp_rm_v');
 
 /**
  * Enqueue scripts and styles.
@@ -155,7 +155,6 @@ add_action( 'wp_enqueue_scripts', 'ashiishme_scripts' );
 // comments
 
 function makzine_comment_lists($comment, $args, $depth) {
-
 	$GLOBALS['comment'] = $comment;
 	switch( $comment->comment_type ) :
 		case 'pingback' :
@@ -201,5 +200,24 @@ function makzine_comment_lists($comment, $args, $depth) {
 			<?php
 			break;
 		endswitch;
+}
 
-	}
+// Add social menu box to menu pages
+function ashiishme_social_menu_box($object) {
+	add_meta_box(
+		'ashiishme-social-menu-box', 
+		__('Social Menu'), 
+		'ashiishme_social_menu_box_cb', 
+		'nav-menus',
+		'side',
+		'default'
+	);
+	return $object;
+}
+
+add_filter('nav_menu_meta_box_object', 'ashiishme_social_menu_box', 10, 1);
+
+// Social menu callback
+function ashiishme_social_menu_box_cb() {
+	// empty
+}

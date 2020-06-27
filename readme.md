@@ -11,11 +11,11 @@ Ashiish.me is a portfolio theme for the popular CMS ( WordPress ). The theme foc
 
 ## Screenshot
 
-![ashiish.me demo image](https://raw.githubusercontent.com/ashiishme/ashiish.me/folio-v1/screenshot.png)
+![ashiish.me demo image](https://raw.githubusercontent.com/ashiishme/ashiish.me/folio-v2/screenshot.png)
 
 ## Installation
 
-1. Download the zip file of the theme from branch `folio-v1`.
+1. Download the zip file of the theme from branch `folio-v2`.
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 1. Select 'Upload' and browse for theme zip file.
 1. Click on the 'Activate' button to use your new theme right away.

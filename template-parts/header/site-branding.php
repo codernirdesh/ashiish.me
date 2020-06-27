@@ -41,20 +41,4 @@
 			</nav>
 			<!-- site navigation ends -->
 		<?php endif; ?>
-		
-		<!-- social menu starts -->
-		<?php if(has_nav_menu( 'social' ) ) : ?>
-		<div class="site-social-menu">
-			<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'social',
-						'menu_class' 	 => 'ashiishme-social-list',
-						'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					)
-				);
-			?>
-		</div>
-		<?php endif; ?>
-		<!-- social menu ends -->
 	</div>

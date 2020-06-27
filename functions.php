@@ -33,9 +33,7 @@ if ( ! function_exists( 'ashiishme_setup' ) ) :
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary', 'ashiishme' ),
-				'footer' => __( 'Footer Menu', 'ashiishme' ),
-				'social' => __( 'Social Links Menu', 'ashiishme' ),
+				'primary' => __( 'Primary', 'ashiishme' )
 			)
 		);
 
